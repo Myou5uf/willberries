@@ -3,9 +3,6 @@ const search = function () {
     const input = document.querySelector('.search-block > input'); // Текстовое поле 
     const searchBtn = document.querySelector('.search-block > button'); // Кнопка поиска 
 
-    console.log(input);
-    console.log(searchBtn);
-
 
     // Событие input - ловит каждый ввод в наше поле вводе 
     input.addEventListener('input', (event) => {
