@@ -1,6 +1,6 @@
 const getGoods = () => {
     const navLinks = document.querySelectorAll(".navigation-link"); // Ссылки в навигации
-    const moreLink = document.querySelector(".more");
+    const moreLink = document.querySelector(".more"); // Кнопка View All
 
     /*  1-й способ написания
         // Метод для получения данных от серера (или с локального файла)
@@ -37,7 +37,7 @@ const getGoods = () => {
                     <img src="db/${element.img}" alt="${element.name}" class="goods-image" />
                     <h3 class="goods-title">${element.name}</h3>
                     <p class="goods-description">${element.description}</p>
-                    <button class="button goods-card-btn add-to-cart" data-id="007">
+                    <button class="button goods-card-btn add-to-cart" data-id="${element.id}">
                         <span class="button-price">$${element.price}</span>
                     </button>
                 </div>
